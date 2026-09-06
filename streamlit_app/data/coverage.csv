@@ -1,0 +1,2 @@
+#rname,startpos,endpos,numreads,covbases,coverage,meandepth,meanbaseq,meanmapq
+chr20,20000001,40000000,65570,19243277,96.2164,38.8142,81.7,51

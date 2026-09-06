@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Nextflow
+.nextflow/
+.nextflow.*
+work/
+
+# Raw / large genomics data
+data/raw/*
+data/interim/*
+data/reference/*
+data/truth/*
+data/processed/*
+
+# Keep directory structure
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/reference/.gitkeep
+!data/truth/.gitkeep
+!data/processed/.gitkeep
+
+# Large genomics formats
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.cram
+*.crai
+*.mmi
+*.fa
+*.fasta
+*.fai
+*.dict
+
+# Large/raw results
+results/*
+!results/.gitkeep
+
+# Logs
+logs/
+*.log
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets
+.env
+.env.*
+secrets.toml
+.streamlit/secrets.toml
+
+# Local validation outputs
+coverage/
+htmlcov/
+
+# Streamlit local runtime
+.streamlit/secrets.toml

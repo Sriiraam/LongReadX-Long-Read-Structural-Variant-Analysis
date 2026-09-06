@@ -1,0 +1,2 @@
+sample_id,technology,region,fastq,reference,truth_vcf,benchmark_bed
+HG002,PacBio_HiFi,PENDING,data/raw/HG002_LongReadX.fastq.gz,data/reference/GRCh38_chr20.fa,data/truth/HG002_GRCh38_v5.0q_stvar.vcf.gz,data/truth/HG002_GRCh38_v5.0q_stvar.benchmark.bed
