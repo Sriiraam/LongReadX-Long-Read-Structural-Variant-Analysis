@@ -1,2 +1,2 @@
-sample_id,technology,region,fastq,reference,truth_vcf,benchmark_bed
-HG002,PacBio_HiFi,PENDING,data/raw/HG002_LongReadX.fastq.gz,data/reference/GRCh38_chr20.fa,data/truth/HG002_GRCh38_v5.0q_stvar.vcf.gz,data/truth/HG002_GRCh38_v5.0q_stvar.benchmark.bed
+sample_id,sample_alias,technology,genome_build,region,reads,reference,truth_vcf,benchmark_bed
+HG002,NA24385,PacBio_HiFi,GRCh38,chr20:20000001-40000000,data/raw/HG002_HiFi_chr20_20M_40M.fastq.gz,data/reference/GRCh38_chr20.fa,data/truth/region/HG002_chr20_20M_40M.truth.vcf.gz,data/truth/region/HG002_chr20_20M_40M.benchmark.bed

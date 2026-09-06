@@ -1,0 +1,13 @@
+# LongReadX checksums
+#
+# SHA256 checksums for frozen biological inputs should be generated locally
+# after final input acquisition.
+#
+# Large biological input files are intentionally not distributed through
+# GitHub.
+#
+# Example:
+#
+# sha256sum data/raw/HG002_HiFi_chr20_20M_40M.fastq.gz
+# sha256sum data/reference/GRCh38_chr20.fa
+# sha256sum data/truth/HG002_GRCh38_v5.0q_stvar.vcf.gz

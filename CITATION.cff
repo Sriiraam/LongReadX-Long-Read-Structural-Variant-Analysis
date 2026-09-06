@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use LongReadX, please cite this software using the metadata below."
+
+title: "LongReadX: Long-Read Structural Variant Analysis"
+type: software
+
+authors:
+  - family-names: "B"
+    given-names: "Sriram"
+
+version: "0.1.0"
+
+date-released: "2026-09-06"
+
+repository-code: "https://github.com/Sriiraam/LongReadX-Long-Read-Structural-Variant-Analysis"
+
+url: "https://github.com/Sriiraam/LongReadX-Long-Read-Structural-Variant-Analysis"
+
+license: "MIT"
+
+keywords:
+  - bioinformatics
+  - genomics
+  - long-read sequencing
+  - PacBio HiFi
+  - structural variants
+  - Sniffles2
+  - cuteSV
+  - Truvari
+  - Nextflow
+  - workflow engineering
+  - HG002
+  - Genome in a Bottle
+
+abstract: >
+  LongReadX is a reproducible long-read structural-variant analysis workflow
+  built around PacBio HiFi data from HG002. It performs long-read quality
+  assessment, minimap2 alignment, BAM quality control, structural-variant
+  calling with Sniffles2 and cuteSV, SV filtering, GIAB v5.0q benchmarking
+  with Truvari, gene-overlap annotation using GENCODE, structured summary
+  generation, SQLite storage, and interactive visualization through Streamlit.

@@ -1,0 +1,26 @@
+name: longreadx
+
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  - python=3.12
+  - nextflow
+  - openjdk=21
+  - minimap2
+  - samtools
+  - bcftools
+  - htslib
+  - bedtools
+  - seqkit
+  - sniffles=2.8.0
+  - cutesv
+  - truvari
+  - pandas
+  - numpy
+  - pysam
+  - pytest
+  - streamlit
+  - plotly

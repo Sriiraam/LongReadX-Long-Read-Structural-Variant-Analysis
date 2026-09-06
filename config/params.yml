@@ -1,0 +1,60 @@
+project:
+  name: LongReadX
+  version: 0.1.0
+
+sample:
+  id: HG002
+  alias: NA24385
+  technology: PacBio_HiFi
+
+region:
+  chromosome: chr20
+  start: 20000001
+  end: 40000000
+  string: chr20:20000001-40000000
+
+reference:
+  genome_build: GRCh38
+  fasta: data/reference/GRCh38_chr20.fa
+  fai: data/reference/GRCh38_chr20.fa.fai
+
+truth:
+  source: GIAB
+  sample: HG002
+  release: v5.0q
+  vcf: data/truth/region/HG002_chr20_20M_40M.truth.vcf.gz
+  benchmark_bed: data/truth/region/HG002_chr20_20M_40M.benchmark.bed
+
+annotation:
+  source: GENCODE
+  release: v49
+  genes_bed: data/reference/annotation/gencode_chr20_genes.bed
+
+alignment:
+  tool: minimap2
+  preset: map-hifi
+  threads: 4
+
+sv_calling:
+  primary_caller: Sniffles2
+  comparison_caller: cuteSV
+  minimum_sv_length: 50
+  retained_types:
+    - DEL
+    - INS
+
+benchmarking:
+  tool: Truvari
+  truth_minimum_sv_length: 50
+  metrics:
+    - TP
+    - FP
+    - FN
+    - precision
+    - recall
+    - F1
+    - genotype_concordance
+
+resources:
+  target_ram_gb: 7.6
+  preferred_active_data_budget_gb: 1.5

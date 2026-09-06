@@ -1,23 +1,28 @@
 .git
 .github
 .nextflow
+.nextflow.*
 work
 .venv
+venv
 __pycache__
 .pytest_cache
 
 data/raw
 data/interim
+data/processed
 
-*.bam
-*.bai
 *.fastq
 *.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.cram
+*.crai
 
 results/alignment
 results/sv_calls
 results/filtered
-results/benchmarking/sniffles2
-results/benchmarking/cutesv
 
-streamlit_app
+streamlit_app/data
