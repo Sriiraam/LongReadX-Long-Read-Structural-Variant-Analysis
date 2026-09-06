@@ -17,7 +17,7 @@
 [![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
 [![pytest](https://img.shields.io/badge/pytest-5_tests_passed-0A9EDC?logo=pytest&logoColor=white)](https://pytest.org/)
 [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI-2088FF?logo=githubactions&logoColor=white)](https://github.com/Sriiraam/LongReadX-Long-Read-Structural-Variant-Analysis/actions)
-[![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?logo=streamlit&logoColor=white)](YOUR_STREAMLIT_URL)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?logo=streamlit&logoColor=white)](https://longreadx.streamlit.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Citation](https://img.shields.io/badge/Citation-CITATION.cff-blue)](CITATION.cff)
 [![Release](https://img.shields.io/badge/Release-v0.1.0-brightgreen)](https://github.com/Sriiraam/LongReadX-Long-Read-Structural-Variant-Analysis/releases)
@@ -46,11 +46,11 @@ The final workflow also incorporates **GENCODE gene annotation**, automated vali
 
 ---
 
-# 🚀 Live Dashboard
+## 🌐 Live Dashboard
 
-The LongReadX results are presented through an interactive Streamlit application.
+Explore LongReadX interactively:
 
-### [Open the LongReadX Dashboard](YOUR_STREAMLIT_URL)
+[**Launch LongReadX Dashboard →**](https://longreadx.streamlit.app/)
 
 The dashboard contains dedicated views for:
 
@@ -199,7 +199,12 @@ Gene overlap analysis is performed using **BEDTools intersect**.
 
 ---
 
-# 🏗️ Workflow Architecture
+## 🏗️ Workflow Architecture
+
+![LongReadX Workflow Architecture](docs/longreadx_workflow_architecture.png)
+
+The architecture combines the complete biological workflow with the engineering and reproducibility layers used in LongReadX, including PacBio HiFi, SeqKit, minimap2, SAMtools, Sniffles2, cuteSV, Truvari, GENCODE, BEDTools, Nextflow DSL2, Docker, pytest, GitHub Actions, SQLite and Streamlit.
+
 
 ```text
                     ┌──────────────────────────────┐
